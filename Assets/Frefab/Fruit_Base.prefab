@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2896820850739829240}
   - component: {fileID: 4598075152376929000}
   - component: {fileID: 2017921640695924419}
+  - component: {fileID: 7278589431918575592}
   m_Layer: 0
   m_Name: Fruit_Base
   m_TagString: Untagged
@@ -33,7 +34,7 @@ Transform:
   - {fileID: 7781348638808711558}
   - {fileID: 6080266996648931199}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &4598075152376929000
 Rigidbody:
@@ -83,6 +84,18 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7278589431918575592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4774955805759792928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364d4b8ff2fbc3d4c8b93d193a22a4f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6047151100836382868
 PrefabInstance:
   m_ObjectHideFlags: 0
