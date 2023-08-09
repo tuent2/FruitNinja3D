@@ -9,18 +9,21 @@ public class Fruit : MonoBehaviour
 
     private Rigidbody fruitRigidbody;
     private Collider fruitCollider;
+    private ParticleSystem juiceParticle;
 
     private void Awake()
     {
         fruitRigidbody = GetComponent<Rigidbody>();
         fruitCollider = GetComponent<Collider>();
+        juiceParticle = GetComponentInChildren<ParticleSystem>();
     }
 
     private void Slice(Vector3 direction, Vector3 position, float force)
     {
+        FindObjectOfType<GameManager>().IncreateScore();
         whole.SetActive(false);
         sliced.SetActive(true);
-
+        juiceParticle.Play();
         fruitCollider.enabled = false;
 
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;

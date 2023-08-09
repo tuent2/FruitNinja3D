@@ -14,7 +14,6 @@ public class Blade : MonoBehaviour
     public float minSliceVelocity = 0.01f;
     private void Awake()
     {
-        
         mainCamera = Camera.main;
         bladeCollider = GetComponent<Collider>();
         bladeTrail = GetComponentInChildren<TrailRenderer>();
